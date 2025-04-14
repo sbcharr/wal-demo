@@ -18,8 +18,8 @@ This project demonstrates a **simple Key-Value Store** with a **Write-Ahead Log 
 
 ### Clone the repository
 ```jshelllanguage
-git clone https://github.com/sbcharr/java-write-ahead-log.git
-cd java-write-ahead-log
+git clone https://github.com/sbcharr/wal-demo.git
+cd wal-demo
 ```
 
 ### Build the project
