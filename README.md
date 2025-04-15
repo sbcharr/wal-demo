@@ -16,6 +16,8 @@ This project demonstrates a **simple Key-Value Store** with a **Write-Ahead Log 
 
 ## Getting Started
 
+The project uses maven, so please make sure you have JDK and maven installed.
+
 ### Clone the repository
 ```jshelllanguage
 git clone https://github.com/sbcharr/wal-demo.git
@@ -28,7 +30,9 @@ mvn clean compile
 ```
 
 ### Run the app
+```jshelllanguage
 mvn exec:java -Dexec.mainClass="com.github.sbcharr.App"
+```
 
 ### Run tests
 ```jshelllanguage
@@ -44,6 +48,8 @@ Tested scenarios include:
 
 ### Sample CLI Usage
 ```jshelllanguage
+> get foo
+Value: null
 > put foo bar
 OK
 > get foo
@@ -52,6 +58,7 @@ Value: bar
 foo=bar
 > exit
 ```
+Run the program again and issue command `get foo`, you should see the value on the screen. This mimics the recovery from a crash or system failure.
 
 ### Key Concepts Covered
 * WAL Fundamentals: Always write to the log before updating in-memory structures.
